@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Sentiment Analysis Using Bert Transformer">
+    <meta name="author" content="Panwar Abhash Anil">
+    <meta name="keywords" content="Sentiment Analysis Using Bert Transformer">
+
+    <!-- Title Page-->
+    <title>NLP Sentiment Analysis</title>
+
+    <!-- Icons font CSS-->
+    <link href="{{ url_for('static',filename='vendor/mdi-font/css/material-design-iconic-font.min.css') }}" rel="stylesheet" media="all">
+    <link href="{{ url_for('static',filename='vendor/font-awesome-4.7/css/font-awesome.min.css') }}" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+
+    <!-- Vendor CSS-->
+    <link href="{{ url_for('static',filename='vendor/select2/select2.min.css') }}" rel="stylesheet" media="all">
+    <link href="{{ url_for('static',filename='vendor/datepicker/daterangepicker.css') }}" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="{{ url_for('static',filename='css/main.css') }}" rel="stylesheet" media="all">
+</head>
+
+<body>
+    <style>
+        
+    </style>
+    <div class="page-wrapper bg-red p-t-40 p-b-40 font-robo">
+        <div class="wrapper wrapper--w960">
+            <div class="card card-2">
+                <div class="card-heading"></div>
+                <div class="card-body">
+                    <h3 align="center" class="title">Welcome to Sentiment Analysis Appication (Using Bert Transformer) <br>- <small>By <a href="https://www.linkedin.com/in/panwar-abhash-anil/">Panwar Abhash Anil</a></small></h3>
+                    <form action="{{ url_for('predict')}}" method="POST">                        
+			            <textarea name="review" placeholder="Enter Text" rows="15" width="100%"></textarea>
+		                <br/>
+			            <br/>                        
+                        <div class="p-t-30">
+                            <button class="btn btn--radius btn--green" type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jquery JS-->
+    <script src="{{ url_for('static',filename='vendor/jquery/jquery.min.js') }}"></script>
+    <!-- Vendor JS-->
+    <script src="{{ url_for('static',filename='vendor/select2/select2.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='vendor/datepicker/moment.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='vendor/datepicker/daterangepicker.js') }}"></script>
+
+    <!-- Main JS-->
+    <script src="{{ url_for('static',filename='js/global.js') }}"></script>
+
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+
+</html>
+<!-- end document-->
